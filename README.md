@@ -49,6 +49,14 @@ It's not needed to explain that now WhatsApp will leak your IP address on every 
 * In separate tab watch IP leaks:
 `$ tail -f visitors.log`
 
+#### Screenshots
+
+![WhatsAppPreview](https://user-images.githubusercontent.com/669547/39364699-a55eb10c-4a50-11e8-9356-2be82273865f.jpg)
+
+![visitors](https://user-images.githubusercontent.com/669547/39364650-7d6f8b3a-4a50-11e8-90eb-d36da5a446af.png)
+
+
+
 #### Credits
 Greets goes to *Rahul Kankrale* for figuring out.
 
