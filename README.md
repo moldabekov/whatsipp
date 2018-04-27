@@ -12,10 +12,9 @@ However WhatsApp developers decided to rely on internal web engine that comes wi
 
 It's not needed to explain that now WhatsApp will leak your IP address on every received link.  
 
+**NOTE: You will need VPS with static IP and domain.**
 
 #### Setup - Classic way
-
-0. You will need VPS with static IP and domain.
 
 1. Get the repo by `go get` or `git clone` this repo:
 `$ go get https://github.com/moldabekov/whatsipp`
@@ -28,7 +27,11 @@ It's not needed to explain that now WhatsApp will leak your IP address on every 
 `$ sudo W_LEAK_PORT=80 ./main`
 
 #### Setup - Docker
-0. You will need VPS with static IP and domain.
+
+1. `docker pull unstab1e/whatsipp`
+2. `docker run --rm -it -p 80:8080 unstab1e/whatsipp`
+
+#### Setup - Docker from scratch
 
 1. Get the repo by `go get` or `git clone` this repo:
 `$ go get https://github.com/moldabekov/whatsipp`
