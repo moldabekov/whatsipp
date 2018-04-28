@@ -18,6 +18,7 @@ import (
 	"net/http"
 	"os"
 	"time"
+	"net/http/httputil"
 )
 
 type LeakData struct {
@@ -45,10 +46,16 @@ func leakIP(w http.ResponseWriter, r *http.Request) {
 
 	form.Execute(w, Data)
 
+	requestDump, err := httputil.DumpRequest(r, true)
+	if err != nil {
+		fmt.Println(err)
+	}
 	if _, ok := os.LookupEnv("DOCKER"); ok {
 		fmt.Printf("%s - %s\n", Data.Timestamp, Data.IP)
+		fmt.Printf("%s", string(requestDump))
 	} else {
 		Log.Printf("%s - %s", Data.Timestamp, Data.IP)
+		Log.Printf("%s", string(requestDump))
 	}
 }
 
