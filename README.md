@@ -37,7 +37,7 @@ $ git clone https://github.com/moldabekov/whatsipp
 3. Run it:
 `$ sudo W_LEAK_PORT=80 ./main`
 
-* If you would like to build and run docker container by yourself please execute the following command on step 3 (docker may require root priviledges):
+* If you would like to build and run docker container by yourself please execute the following command on step 3 (docker may require root privileges):
 `$ make docker`
 
 #### Usage

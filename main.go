@@ -16,9 +16,9 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"net/http/httputil"
 	"os"
 	"time"
-	"net/http/httputil"
 )
 
 type LeakData struct {
