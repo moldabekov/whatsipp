@@ -10,7 +10,7 @@ The best practice is to generate preview by external proxy server which will fet
 
 However WhatsApp developers decided to rely on internal web engine that comes with OS.
 
-It's not needed to explain that now WhatsApp will leak your IP address on every received link, **and** in addition you will leak your IP in link preview mode without actually opening the link.  
+It's not needed to explain that now WhatsApp will leak your IP address on every received link, **and** in addition user will leak his IP in link preview mode without actually opening the link.  
 
 ---
 **NOTE: You will need VPS with static IP and domain.**
